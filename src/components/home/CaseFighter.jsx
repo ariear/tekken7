@@ -1,3 +1,5 @@
+import FighterShowCase from "./child/FighterShowCase"
+
 const CaseFighter = () => {
     return (
         <div>
@@ -7,9 +9,15 @@ const CaseFighter = () => {
              }}></div>
              <div style={{ 
                 backgroundColor: 'rgb(38,28,44)'
-              }} className="-translate-y-32" >
-                <p className="font-pupylinux text-9xl font-semibold absolute left-0 right-0 mx-auto">FIGHTERS</p>
-                <img src="/image/fahkumram-longercard.png" alt="" />
+              }} className="-translate-y-32 flex justify-center items-center py-20" >
+                <p className="font-pupylinux text-[380px] font-semibold absolute left-0 right-0 mx-auto text-center text-gray-800">FIGHTERS</p>
+                <div className="relative flex items-center">
+                <FighterShowCase img={'/image/fahkumram-longercard.png'} hover={'/image/fahkumram.png'} />
+                <FighterShowCase img={'/image/kunimitsu-longercard.png'} hover={'/image/kunimitsu.png'} />
+                <FighterShowCase img={'/image/leroy-longercard.png'} hover={'/image/leroy.png'} />
+                <FighterShowCase img={'/image/lidia-longercard.png'} hover={'/image/lidia.png'} />
+                <FighterShowCase img={'/image/zafina-longercard.png'} hover={'/image/zafina.png'} />
+                </div>
              </div>
         </div>
     )
